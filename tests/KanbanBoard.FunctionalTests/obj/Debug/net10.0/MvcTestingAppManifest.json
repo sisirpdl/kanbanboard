@@ -1,0 +1,7 @@
+{
+  "KanbanBoard.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DSU Student\\Desktop\\kanban\\KanbanBoard\\src\\KanbanBoard.Core",
+  "KanbanBoard.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DSU Student\\Desktop\\kanban\\KanbanBoard\\src\\KanbanBoard.Infrastructure",
+  "KanbanBoard.ServiceDefaults, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DSU Student\\Desktop\\kanban\\KanbanBoard\\src\\KanbanBoard.ServiceDefaults",
+  "KanbanBoard.UseCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DSU Student\\Desktop\\kanban\\KanbanBoard\\src\\KanbanBoard.UseCases",
+  "KanbanBoard.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\DSU Student\\Desktop\\kanban\\KanbanBoard\\src\\KanbanBoard.Web"
+}

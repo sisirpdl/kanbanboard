@@ -1,0 +1,33 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".template.config/template.json" />
+    <File Path="CleanArchitecture.nuspec" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/KanbanBoard.Core/KanbanBoard.Core.csproj" />
+    <Project Path="src/KanbanBoard.Infrastructure/KanbanBoard.Infrastructure.csproj" />
+    <Project Path="src/KanbanBoard.UseCases/KanbanBoard.UseCases.csproj" />
+    <Project Path="src/KanbanBoard.Web/KanbanBoard.Web.csproj" />
+  </Folder>
+  <Folder Name="/src/_aspire/">
+    <Project Path="src/KanbanBoard.AspireHost/KanbanBoard.AspireHost.csproj" />
+    <Project Path="src/KanbanBoard.ServiceDefaults/KanbanBoard.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/KanbanBoard.FunctionalTests/KanbanBoard.FunctionalTests.csproj">
+      <BuildDependency Project="src/KanbanBoard.Web/KanbanBoard.Web.csproj" />
+    </Project>
+    <Project Path="tests/KanbanBoard.IntegrationTests/KanbanBoard.IntegrationTests.csproj">
+      <BuildDependency Project="src/KanbanBoard.Infrastructure/KanbanBoard.Infrastructure.csproj" />
+    </Project>
+    <Project Path="tests/KanbanBoard.UnitTests/KanbanBoard.UnitTests.csproj" />
+  </Folder>
+</Solution>

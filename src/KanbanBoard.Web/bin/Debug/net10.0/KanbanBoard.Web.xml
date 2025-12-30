@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KanbanBoard.Web</name>
+    </assembly>
+    <members>
+        <member name="T:KanbanBoard.Web.Contributors.DeleteContributorValidator">
+            <summary>
+            See: https://fast-endpoints.com/docs/validation
+            </summary>
+        </member>
+        <member name="T:KanbanBoard.Web.Contributors.GetContributorValidator">
+            <summary>
+            See: https://fast-endpoints.com/docs/validation
+            </summary>
+        </member>
+        <member name="T:KanbanBoard.Web.Contributors.UpdateContributorValidator">
+            <summary>
+            See: https://fast-endpoints.com/docs/validation
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToCreatedResult``2(Ardalis.Result.Result{``0},System.Func{``0,System.String},System.Func{``0,``1})">
+            <summary>
+            Maps Result to TypedResults for endpoints that return Created, ValidationProblem, or ProblemHttpResult
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToGetByIdResult``2(Ardalis.Result.Result{``0},System.Func{``0,``1})">
+            <summary>
+            Maps Result to TypedResults for GetById endpoints that return Ok, NotFound, or ProblemHttpResult
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToUpdateResult``2(Ardalis.Result.Result{``0},System.Func{``0,``1})">
+            <summary>
+            Maps Result to TypedResults for Update endpoints that return Ok, NotFound, or ProblemHttpResult
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToDeleteResult(Ardalis.Result.Result)">
+            <summary>
+            Maps Result to TypedResults for Delete endpoints that return NoContent, NotFound, or ProblemHttpResult
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToOkOrNotFoundResult``2(Ardalis.Result.Result{``0},System.Func{``0,``1},System.String)">
+            <summary>
+            Private helper method for Ok/NotFound result patterns
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToOkOnlyResult``2(Ardalis.Result.Result{``0},System.Func{``0,``1})">
+            <summary>
+            Maps Result to TypedResults for endpoints that return Ok only (like List endpoints)
+            </summary>
+        </member>
+        <member name="M:KanbanBoard.Web.Extensions.ResultExtensions.ToCommandResult(Ardalis.Result.Result)">
+            <summary>
+            Maps Result (non-generic) to TypedResults for commands that return Ok, NotFound, ValidationProblem, or ProblemHttpResult
+            </summary>
+        </member>
+        <member name="T:Mediator.MediatorOptions">
+            <summary>
+            Provide options for the Mediator source generator.
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.Namespace">
+            <summary>
+            The namespace in which the Mediator implementation is generated.
+            By default, the namespace is "Mediator".
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.GenerateTypesAsInternal">
+            <summary>
+            Wether or not generated types should be <c>internal</c> (they are public by default).
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.NotificationPublisherType">
+            <summary>
+            The <see cref="T:Mediator.INotificationPublisher" /> type to use when publishing notifications.
+            By default, the type is <see cref="T:Mediator.ForeachAwaitPublisher" />.
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.ServiceLifetime">
+            <summary>
+            The default lifetime of the services registered in the DI container by the Mediator source generator.
+            By default, the lifetime is <see cref="F:Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton" />.
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.Assemblies">
+            <summary>
+            The collection of assemblies to scan for Mediator handlers.
+            By default, the collection is empty, in which case the source generator will scan all assemblies through references from the source generated project.
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.PipelineBehaviors">
+            <summary>
+            The collection of types of pipeline behaviors to register in DI.
+            When the type is an unconstructed generic type, the source generator will register all the constructed types of the generic type (open generics that is supported during AoT).
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptions.StreamPipelineBehaviors">
+            <summary>
+            The collection of types of streaming pipeline behaviors to register in DI.
+            When the type is an unconstructed generic type, the source generator will register all the constructed types of the generic type (open generics that is supported during AoT).
+            </summary>
+        </member>
+        <member name="T:Mediator.MediatorOptionsAttribute">
+            <summary>
+            Provide options for the Mediator source generator.
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptionsAttribute.Namespace">
+            <summary>
+            The namespace in which the Mediator implementation is generated.
+            By default, the namespace is "Mediator".
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptionsAttribute.NotificationPublisherType">
+            <summary>
+            The <see cref="T:Mediator.INotificationPublisher" /> type to use when publishing notifications.
+            By default, the type is <see cref="T:Mediator.ForeachAwaitPublisher" />.
+            </summary>
+        </member>
+        <member name="P:Mediator.MediatorOptionsAttribute.ServiceLifetime">
+            <summary>
+            The default lifetime of the services registered in the DI container by the Mediator source generator.
+            By default, the lifetime is <see cref="F:Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton" />.
+            </summary>
+        </member>
+        <member name="T:Mediator.AssemblyReference">
+            <summary>
+            Represents an assembly reference.
+            This is used to specify the types or assemblies to scan for Mediator handlers.
+            </summary>
+        </member>
+        <member name="P:Mediator.AssemblyReference.Assembly">
+            <summary>
+            The assembly reference.
+            </summary>
+        </member>
+        <member name="M:Mediator.AssemblyReference.op_Implicit(System.Type)~Mediator.AssemblyReference">
+            <summary>
+            Creates a new instance of <see cref="T:Mediator.AssemblyReference" /> from the specified type.
+            </summary>
+            <param name="type">The type</param>
+            <returns>A new instance of <see cref="T:Mediator.AssemblyReference" /></returns>
+        </member>
+        <member name="M:Mediator.AssemblyReference.op_Implicit(System.Reflection.Assembly)~Mediator.AssemblyReference">
+            <summary>
+            Creates a new instance of <see cref="T:Mediator.AssemblyReference" /> from the specified assembly.
+            </summary>
+            <param name="assembly">The assembly</param>
+            <returns>A new instance of <see cref="T:Mediator.AssemblyReference" /></returns>
+        </member>
+        <member name="T:Mediator.Mediator">
+            <summary>
+            Generated code for Mediator implementation.
+            This type is also registered as a DI service.
+            Can be used directly for high performance scenarios.
+            </summary>
+        </member>
+        <member name="F:Mediator.Mediator.ServiceLifetime">
+            <summary>
+            The lifetime of Mediator-related service registrations in DI container.
+            </summary>
+        </member>
+        <member name="F:Mediator.Mediator.NotificationPublisherName">
+            <summary>
+            The name of the notification publisher service that was configured.
+            </summary>
+        </member>
+        <member name="F:Mediator.Mediator.TotalMessages">
+            <summary>
+            The total number of Mediator messages that were discovered.
+            </summary>
+        </member>
+        <member name="M:Mediator.Mediator.#ctor(System.IServiceProvider)">
+            <summary>
+            Constructor for DI, should not be used by consumer.
+            </summary>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Contributors.Create.CreateContributorCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Contributors.Create.CreateContributorCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Contributors.Delete.DeleteContributorCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Contributors.Delete.DeleteContributorCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Contributors.Update.UpdateContributorCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Contributors.Update.UpdateContributorCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Tasks.Create.CreateTaskCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Tasks.Create.CreateTaskCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Tasks.Delete.DeleteTaskCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Tasks.Delete.DeleteTaskCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Tasks.MoveTask.MoveTaskCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Tasks.MoveTask.MoveTaskCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Tasks.Update.UpdateTaskCommand,System.Threading.CancellationToken)">
+            <summary>
+            Send a command of type global::KanbanBoard.UseCases.Tasks.Update.UpdateTaskCommand.
+            Throws <see cref="T:System.ArgumentNullException"/> if command is null.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Contributors.Get.GetContributorQuery,System.Threading.CancellationToken)">
+            <summary>
+            Send a query of type global::KanbanBoard.UseCases.Contributors.Get.GetContributorQuery.
+            Throws <see cref="T:System.ArgumentNullException"/> if query is null.
+            </summary>
+            <param name="query">Incoming query</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Contributors.List.ListContributorsQuery,System.Threading.CancellationToken)">
+            <summary>
+            Send a query of type global::KanbanBoard.UseCases.Contributors.List.ListContributorsQuery.
+            Throws <see cref="T:System.ArgumentNullException"/> if query is null.
+            </summary>
+            <param name="query">Incoming query</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Tasks.GetTaskById.GetTaskByIdQuery,System.Threading.CancellationToken)">
+            <summary>
+            Send a query of type global::KanbanBoard.UseCases.Tasks.GetTaskById.GetTaskByIdQuery.
+            Throws <see cref="T:System.ArgumentNullException"/> if query is null.
+            </summary>
+            <param name="query">Incoming query</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(KanbanBoard.UseCases.Tasks.GetTasksByBoard.GetTasksByBoardQuery,System.Threading.CancellationToken)">
+            <summary>
+            Send a query of type global::KanbanBoard.UseCases.Tasks.GetTasksByBoard.GetTasksByBoardQuery.
+            Throws <see cref="T:System.ArgumentNullException"/> if query is null.
+            </summary>
+            <param name="query">Incoming query</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send``1(Mediator.IRequest{``0},System.Threading.CancellationToken)">
+            <summary>
+            Send request.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if request does not implement <see cref="T:Mediator.IRequest`1"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="request">Incoming request</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.CreateStream``1(Mediator.IStreamRequest{``0},System.Threading.CancellationToken)">
+            <summary>
+            Create stream for request.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if request does not implement <see cref="T:Mediator.IStreamRequest`1"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="request">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Async enumerable</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send``1(Mediator.ICommand{``0},System.Threading.CancellationToken)">
+            <summary>
+            Send command.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if command does not implement <see cref="T:Mediator.ICommand`1"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="command">Incoming command</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.CreateStream``1(Mediator.IStreamCommand{``0},System.Threading.CancellationToken)">
+            <summary>
+            Create stream for command.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if command does not implement <see cref="T:Mediator.IStreamCommand`1"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="command">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Async enumerable</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send``1(Mediator.IQuery{``0},System.Threading.CancellationToken)">
+            <summary>
+            Send query.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if query does not implement <see cref="T:Mediator.IQuery`1"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="query">Incoming query</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.CreateStream``1(Mediator.IStreamQuery{``0},System.Threading.CancellationToken)">
+            <summary>
+            Create stream for query.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if query does not implement <see cref="T:Mediator.IStreamQuery`1"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="query">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Async enumerable</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Send(System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Send message.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if message does not implement <see cref="T:Mediator.IMessage"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="message">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.CreateStream(System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Create stream.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if message does not implement <see cref="T:Mediator.IStreamMessage"/>.
+            Throws <see cref="T:Mediator.MissingMessageHandlerException"/> if no handler is registered.
+            </summary>
+            <param name="message">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Async enumerable</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Publish(System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Publish notification.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if notification does not implement <see cref="T:Mediator.INotification"/>.
+            Throws <see cref="T:System.AggregateException"/> if handlers throw exception(s).
+            Drops messages
+            </summary>
+            <param name="notification">Incoming notification</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Publish(KanbanBoard.Core.ContributorAggregate.Events.ContributorDeletedEvent,System.Threading.CancellationToken)">
+            <summary>
+            Send a notification of type global::KanbanBoard.Core.ContributorAggregate.Events.ContributorDeletedEvent.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:System.AggregateException"/> if handlers throw exception(s).
+            </summary>
+            <param name="notification">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Publish(KanbanBoard.Core.ContributorAggregate.Events.ContributorNameUpdatedEvent,System.Threading.CancellationToken)">
+            <summary>
+            Send a notification of type global::KanbanBoard.Core.ContributorAggregate.Events.ContributorNameUpdatedEvent.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:System.AggregateException"/> if handlers throw exception(s).
+            </summary>
+            <param name="notification">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Publish(KanbanBoard.Core.TaskAggregate.Events.TaskMovedEvent,System.Threading.CancellationToken)">
+            <summary>
+            Send a notification of type global::KanbanBoard.Core.TaskAggregate.Events.TaskMovedEvent.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:System.AggregateException"/> if handlers throw exception(s).
+            </summary>
+            <param name="notification">Incoming message</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="M:Mediator.Mediator.Publish``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            Publish notification.
+            Throws <see cref="T:System.ArgumentNullException"/> if message is null.
+            Throws <see cref="T:Mediator.InvalidMessageException"/> if notification does not implement <see cref="T:Mediator.INotification"/>.
+            Throws <see cref="T:System.AggregateException"/> if handlers throw exception(s).
+            </summary>
+            <param name="notification">Incoming notification</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Awaitable task</returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.MediatorDependencyInjectionExtensions">
+            <summary>
+            DI extensions for Mediator.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.MediatorDependencyInjectionExtensions.AddMediator(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the Mediator implementation and handlers of your application.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.MediatorDependencyInjectionExtensions.AddMediator(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Mediator.MediatorOptions})">
+            <summary>
+            Adds the Mediator implementation and handlers of your application, with specified options.
+            </summary>
+        </member>
+    </members>
+</doc>

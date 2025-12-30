@@ -1,0 +1,12 @@
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\bin\Debug\net10.0\KanbanBoard.Core.deps.json
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\bin\Debug\net10.0\KanbanBoard.Core.dll
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\bin\Debug\net10.0\KanbanBoard.Core.pdb
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.csproj.AssemblyReference.cache
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.AssemblyInfoInputs.cache
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.AssemblyInfo.cs
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.csproj.CoreCompileInputs.cache
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.dll
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\refint\KanbanBoard.Core.dll
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\KanbanBoard.Core.pdb
+C:\Users\DSU Student\Desktop\kanban\KanbanBoard\src\KanbanBoard.Core\obj\Debug\net10.0\ref\KanbanBoard.Core.dll

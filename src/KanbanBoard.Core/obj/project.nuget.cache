@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "IqSirVDgC/U=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DSU Student\\Desktop\\kanban\\KanbanBoard\\src\\KanbanBoard.Core\\KanbanBoard.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DSU Student\\.nuget\\packages\\ardalis.guardclauses\\5.0.0\\ardalis.guardclauses.5.0.0.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\ardalis.result\\10.1.0\\ardalis.result.10.1.0.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\ardalis.sharedkernel\\4.1.0\\ardalis.sharedkernel.4.1.0.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\ardalis.specification\\9.3.1\\ardalis.specification.9.3.1.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\mediator.abstractions\\3.0.1\\mediator.abstractions.3.0.1.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\DSU Student\\.nuget\\packages\\vogen\\8.0.2\\vogen.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
